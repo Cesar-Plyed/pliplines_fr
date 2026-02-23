@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Popup from "./ui/pup";
+import Popup from "../atoms/Pup";
 import { useForm } from "@formspree/react";
 
 interface FeedbackPopupProps {

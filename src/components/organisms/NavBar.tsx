@@ -1,5 +1,5 @@
-import Button from "./ui/Button";
-import Icon from "../assets/Icon.svg";
+import Button from "../atoms/HamburgerButton";
+import Icon from "../../assets/Icon.svg";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 interface NavBarProps {

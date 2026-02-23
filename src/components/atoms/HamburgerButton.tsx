@@ -5,7 +5,7 @@ interface ButtonProps {
   isActive: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, className, isActive }) => {
+const HamburgerButton: React.FC<ButtonProps> = ({ onClick, children, className, isActive }) => {
   return (
     <div
       className={`flex w-full h-full items-center justify-end relative ${
@@ -39,4 +39,4 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, className, isActive 
   );
 };
 
-export default Button;
+export default HamburgerButton;

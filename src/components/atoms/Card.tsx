@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Slide from "../../animations/slide";
 import { useInView } from "react-intersection-observer";
-import { bufferToBase64 } from "../../utils/imageUtils";
+import { bufferToBase64 } from "../../utils/ImageUtils";
 
 interface Item {
   id: number;

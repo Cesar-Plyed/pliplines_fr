@@ -1,7 +1,7 @@
 import { useState, Suspense, useTransition } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import FeedbackPoup from "./feedbackPoup";
-import ErrorBoundary from "../utils/ErrorBoundary";
+import FeedbackPoup from "../molecules/FeedbackPoup";
+import ErrorBoundary from "../../utils/ErrorBoundary";
 
 interface SidebarProps {
   children: React.ReactNode;
