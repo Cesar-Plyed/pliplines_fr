@@ -1,12 +1,12 @@
-# 🚀 Pliplines FR
+# Pliplines FR
 
 Una aplicación frontend moderna construida con **React**, **TypeScript** y **Vite**.
 
-## 📋 Descripción
+## Descripción
 
 Pliplines FR es una aplicación web frontend que utiliza las mejores prácticas modernas de desarrollo. El proyecto está optimizado para rendimiento, mantenibilidad y experiencia del desarrollador.
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 - **React 18.2** - Librería de interfaz de usuario
 - **TypeScript 5.7** - Tipado estático para JavaScript
@@ -18,7 +18,7 @@ Pliplines FR es una aplicación web frontend que utiliza las mejores prácticas 
 - **Axios 1.7** - Cliente HTTP
 - **Emotion** - Librería de CSS-in-JS
 
-## 📦 Características Principales
+## Características Principales
 
 - ✅ Desarrollo rápido con HMR (Hot Module Replacement)
 - ✅ Tipado completo con TypeScript
@@ -31,7 +31,7 @@ Pliplines FR es una aplicación web frontend que utiliza las mejores prácticas 
 - ✅ Linting automático con ESLint
 - ✅ Soporte para SCSS con Sass Embedded
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Requisitos Previos
 
@@ -65,7 +65,7 @@ npm run lint
 npm run preview
 ```
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 pliplines_fr/
@@ -78,7 +78,7 @@ pliplines_fr/
 └── package.json       # Dependencias del proyecto
 ```
 
-## 🔧 Configuración de Desarrollo
+## Configuración de Desarrollo
 
 ### TypeScript
 
@@ -99,7 +99,7 @@ Vite proporciona:
 - Pre-bundling de dependencias
 - Optimización automática de activos
 
-## 🎨 Estilos
+## Estilos
 
 El proyecto soporta múltiples enfoques de styling:
 
@@ -108,13 +108,13 @@ El proyecto soporta múltiples enfoques de styling:
 - **Emotion** - CSS-in-JS
 - **SCSS/Sass** - Preprocesador CSS
 
-## 📊 Composición del Lenguaje
+## Composición del Lenguaje
 
 - **TypeScript**: 94.7%
 - **JavaScript**: 3.2%
 - **HTML**: 2.1%
 
-## 🤝 Contribuir
+## Contribuir
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -124,22 +124,18 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT.
 
-## 👤 Autor
+## Autor
 
 **Cesar-Plyed**
 
-## 🔗 Enlaces Útiles
+## Enlaces Útiles
 
 - [React Documentación](https://react.dev)
 - [Vite Documentación](https://vitejs.dev)
 - [TypeScript Documentación](https://www.typescriptlang.org)
 - [Tailwind CSS Documentación](https://tailwindcss.com)
 - [Material-UI Documentación](https://mui.com)
-
----
-
-Hecho con ❤️ por Cesar-Plyed
