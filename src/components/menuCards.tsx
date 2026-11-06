@@ -4,7 +4,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 import MenuItem from "./ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { AutoSizer, List } from "react-virtualized";
-import { SetStateAction } from "react";
 
 export default function Menu() {
   const {
@@ -13,21 +12,7 @@ export default function Menu() {
     isLoading,
   } = useQuery({
     queryKey: ["menu"],
-    queryFn: async () => {
-      const result = { drinks: [], foods: [] };
-      await getData(
-        (drinks: SetStateAction<any[]>) => {
-          result.drinks = drinks as never[];
-        },
-        (foods: SetStateAction<any[]>) => {
-          result.foods = foods as never[];
-        },
-        (error) => {
-          throw error;
-        }
-      );
-      return result;
-    },
+    queryFn: async () => getData(),
     staleTime: 5 * 60 * 1000, // Cache for 5 minutes
   });
 
@@ -70,7 +55,7 @@ export default function Menu() {
         }}
       >
         {rowItems.map((item) => (
-          <MenuItem key={(item as { id: string }).id} item={item} />
+          <MenuItem key={item.id} item={item} />
         ))}
       </div>
     );
