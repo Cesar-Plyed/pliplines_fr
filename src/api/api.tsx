@@ -1,22 +1,19 @@
 import axios from "axios";
+import type { Item } from "../components/ui/card";
 
-// Definir tipos para las funciones
-type SetState<T> = React.Dispatch<React.SetStateAction<T>>;
+export type MenuItem = Item;
+export type MenuData = {
+  drinks: MenuItem[];
+  foods: MenuItem[];
+};
 
-// Método GET
-export const getData = async (
-  setDrinks: SetState<any[]>,
-  setFoods: SetState<any[]>,
-  setError: SetState<string | null>
-) => {
-  try {
-    const response = await axios.get("http://localhost:3000/menu");
-    setDrinks(response.data.resultDR || []);
-    setFoods(response.data.resultFD || []);
-  } catch (error) {
-    setError("Error fetching items");
-    console.log(error);
-  }
+// Método GET — retorna datos tipados directamente
+export const getData = async (): Promise<MenuData> => {
+  const response = await axios.get("http://localhost:3000/menu");
+  return {
+    drinks: response.data.resultDR || ([] as MenuItem[]),
+    foods: response.data.resultFD || ([] as MenuItem[]),
+  };
 };
 
 // Método POST
